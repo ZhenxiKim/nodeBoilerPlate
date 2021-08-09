@@ -30,3 +30,19 @@ npm은 필요한 디펜던시들을 다 로컬 OR 글로벌로 받아서 사용�
 -> 디스크 공간 절약, 항상 최신버전 사용 가능
 
 - src 폴더에 webpack이 번들화하는 범주의 폴더이므로 서비스에 이미지등 리소스를 넣고싶을때 src폴더에 넣어야함 
+
+- 폴더구조
+1. _actions,_reducer 
+    - Redux를 위한 폴더
+2. components/views
+    - pages들 위치
+3. components/views/Sections
+    - 해당 페이지에 관련된 css, component추가
+4. App.js
+    - Routing관련 일 처리
+5. Config.js
+    - 환경변수 설정 파일
+6. hoc
+    - Higher Order Component
+    예) admin관리자만 들어갈수있는 컴포넌트에 들어갈 수 있는지 검사하는 상위 컴포넌트
+7. utils
