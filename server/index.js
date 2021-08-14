@@ -8,7 +8,7 @@ app.use(express.urlencoded({extended: true}));
 app.use(express.json());
 
 const mongoose = require('mongoose')
-mongoose.connect('mongodb+srv://antock:Antock1026!!@cluster0.esjyr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
+mongoose.connect('mongodb+srv://antock:@cluster0.esjyr.mongodb.net/myFirstDatabase?retryWrites=true&w=majority', {
     useNewUrlParser: true, useUnifiedTopology: true,useCreateIndex: true, useFindAndModify: false
 }).then(() => console.log('MongoDB connect..'))
 .catch(err => console.log(err))
