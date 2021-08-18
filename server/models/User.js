@@ -1,7 +1,7 @@
 
 const mongoose = require('mongoose');
 
-const userSchema = mongoose.userSchema({
+const userSchema = mongoose.Schema({
     name: {
         type: String,
         maxlength: 50
@@ -32,5 +32,5 @@ const userSchema = mongoose.userSchema({
     }
 })
 
-//const User = mongoose.model('User',userSchema)
-//module.exports = {User}//다른곳에서도 사용할 수 있도록 export
+const User = mongoose.model('User',userSchema)
+module.exports = {User}//다른곳에서도 사용할 수 있도록 export
