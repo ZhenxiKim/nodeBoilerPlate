@@ -4,7 +4,7 @@ const port = 5000
 const bodyParser = require('body-parser');//Express 4.16+부터 body파서가 필요없다
 const { User } = require("./models/User");
 
-const config = require('../client/src/config/key');
+const config = require('./config/key');
 
 //application/x-www-form-urlencoded 분석해서 가져옴
 app.use(express.urlencoded({extended: true}));
@@ -29,6 +29,10 @@ app.post('/register',(req,res) => {
             success: true
         })
     })
+})
+
+app.post('/login', (req, res) => {
+    //요청된 이메일을 데이터 베이스에서 찾는다.
 })
 
 
